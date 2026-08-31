@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O que esperar da IA generativa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #E9EBE4;
+    --surface: #FCFCFA;
+    --ink: #1E2320;
+    --muted: #5C635C;
+    --pine: #35564E;
+    --plum: #7A4B6B;
+    --rule: #CBD0C6;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 40px 28px 48px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 940px; margin: 0 auto; }
+
+  header { max-width: 60ch; margin-bottom: 36px; }
+
+  h1 {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    margin: 0 0 14px;
+  }
+
+  .lede { margin: 0; color: var(--muted); }
+
+  .source {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 13px;
+    color: var(--pine);
+    margin: 18px 0 0;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--pine);
+    border-radius: 0;
+    padding: 22px 22px 24px;
+  }
+
+  .card .num {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--plum);
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .card h2 {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.3;
+    margin: 0 0 10px;
+  }
+
+  .card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--muted);
+  }
+
+  .card .action {
+    display: block;
+    margin-top: 12px;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+
+  footer {
+    margin-top: 32px;
+    padding: 22px 24px;
+    background: var(--pine);
+    color: #EDF1EC;
+    max-width: 68ch;
+  }
+
+  footer p { margin: 0; font-size: 15.5px; }
+  footer p + p { margin-top: 10px; color: #C3D1CA; font-size: 14.5px; }
+
+  @media (max-width: 520px) {
+    body { padding: 28px 18px 36px; }
+    h1 { font-size: 25px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>O que esperar da IA generativa</h1>
+    <p class="lede">Cinco propriedades de comportamento que valem para o Claude independentemente do recurso que você usar. Entendê-las antes de montar fluxos de trabalho evita as fontes mais comuns de frustração e de expectativa desalinhada.</p>
+    <p class="source">Módulo 1 da trilha Claude Certified Associate – Foundations</p>
+  </header>
+
+  <div class="grid">
+
+    <article class="card">
+      <span class="num">Propriedade 1</span>
+      <h2>As respostas variam</h2>
+      <p>Faça a mesma pergunta duas vezes e receba duas respostas diferentes. As saídas são produzidas por probabilidade, não recuperadas de um banco de dados fixo.</p>
+      <span class="action">Conte com a variação e inclua revisão em qualquer fluxo que dependa de consistência.</span>
+    </article>
+
+    <article class="card">
+      <span class="num">Propriedade 2</span>
+      <h2>Tom confiante não é sinal de precisão</h2>
+      <p>O Claude escreve com a mesma fluência esteja a resposta correta ou não. Uma estatística inventada soa tão segura quanto uma verificada.</p>
+      <span class="action">Sem hábito de verificação, a fluência não diz nada sobre a precisão.</span>
+    </article>
+
+    <article class="card">
+      <span class="num">Propriedade 3</span>
+      <h2>Contexto é um orçamento</h2>
+      <p>Toda conversa tem limite de memória de trabalho. Perto do limite, mensagens antigas são resumidas para a sessão continuar, e resumos comprimem detalhes.</p>
+      <span class="action">Instruções do início de uma sessão longa perdem força no fim. Saiba quando reiniciar, resumir ou persistir.</span>
+    </article>
+
+    <article class="card">
+      <span class="num">Propriedade 4</span>
+      <h2>O conhecimento tem uma fronteira de treinamento</h2>
+      <p>Informação posterior à data de corte fica fora do conhecimento confiável do modelo. Isso afeta eventos recentes, regulamentações vigentes e dados de mercado.</p>
+      <span class="action">Quando a atualidade importa, conecte uma fonte, ative a busca na web ou use o Research.</span>
+    </article>
+
+    <article class="card">
+      <span class="num">Propriedade 5</span>
+      <h2>Procedimentos configurados ainda variam</h2>
+      <p>Uma Skill que executa sempre o mesmo procedimento reduz a variação, mas não a elimina. Cada execução produz uma saída um pouco diferente.</p>
+      <span class="action">Configuração diminui a variação e não substitui a conferência da saída.</span>
+    </article>
+
+  </div>
+
+  <footer>
+    <p>Nenhuma dessas propriedades é um defeito a ser consertado. São características de como o modelo generativo funciona, e todas apontam para a mesma conclusão prática: a revisão humana continua dentro do fluxo.</p>
+    <p>Por isso o domínio de avaliação e validação de output é o de maior peso na prova, com 21% das questões.</p>
+  </footer>
+
+</div>
+</body>
+</html>
